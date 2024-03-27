@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: mysql:8
+    ports:
+      - '3306:3306'
+    expose:
+      - 3306
+    environment:
+      - MYSQL_DATABASE=game-hub
+      - MYSQL_USER=rafael
+      - MYSQL_PASSWORD=12345678
+      - MYSQL_ROOT_PASSWORD=12345678
